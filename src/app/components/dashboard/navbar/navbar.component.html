@@ -1,0 +1,9 @@
+<mat-toolbar color="primary">
+    <span>My Application</span>
+    <span class="example-spacer"></span>
+    <button mat-raised-button *ngFor="let item of menu" [routerLink]="item.redirect">{{item.nombre}}</button>
+   <span class="example-spacer"></span>
+    <button routerLink="/dashbooard/logout" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>logout</mat-icon>
+    </button>
+</mat-toolbar>
